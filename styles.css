@@ -1,0 +1,349 @@
+/* CSS Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    background: #080808;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  /* Header Styles */
+  #header {
+    width: 100%;
+    height: 100vh;
+    background-image: url('img2.png'); 
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+  }
+  
+  .container {
+    padding: 0 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    
+  }
+
+ 
+  
+  nav {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    margin-right: 70px;
+  }
+  
+  nav ul li {
+    margin: 0 15px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+    transition: color 0.3s;
+  }
+  
+  nav ul li a::after {
+    content: '';
+    width: 0%;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: width 0.5s;
+  }
+  
+  nav ul li a:hover::after {
+    width: 100%;
+  }
+  
+  /* Header Text Styles */
+  .header-text {
+    margin-top: 20px;
+  }
+  
+  .header-text h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: #ff004f;
+  }
+  
+  .header-text p {
+    font-size: 24px;
+  }
+  
+  /* Responsive Styles */
+  @media screen and (max-width: 768px) {
+    .header-text {
+      margin-top: 40px;
+    }
+  
+    .header-text h1 {
+      font-size: 36px;
+    }
+  
+    .header-text p {
+      font-size: 18px;
+    }
+  
+    nav {
+      top: 10px;
+      right: 10px;
+    }
+  
+    nav ul li {
+      margin: 0 10px;
+    }
+  }
+
+  /* Styles for icons */
+nav i {
+  font-size: 24px; /* Adjust the size as needed */
+  margin-right: 15px; /* Adjust spacing between icons */
+  color: #333; /* Adjust icon color */
+}
+
+/* Additional styles for specific icons (if needed) */
+.bi-instagram {
+  color: #ec0832; /* Instagram color */
+}
+
+.bi-linkedin {
+  color: #3d08a0; /* LinkedIn color */
+}
+
+.bi-github {
+  color: #211f1f; /* GitHub color */
+}
+
+.bi-facebook {
+  color: #083596; /* Facebook color */
+}
+
+  
+
+  /*----------------------------------------------------------------------------------------*/
+
+
+  #about{
+	padding: 80px 0;
+	color: #ababab;
+
+}
+.row{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.about-col-1{
+	flex-basis: 35%;
+}
+.about-col-1 img{
+	width: 100%;
+	border-radius: 15px;
+
+}
+.about-col-2{
+	flex-basis: 60%;
+}
+.sub-title{
+	font-size: 60px;
+	font-weight: 600;
+	color: #fff;
+}
+
+/*------------------------------------------services---------------------------------------*/
+
+
+#Services {
+  padding: 30px 0;
+}
+
+.Services-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 40px;
+  margin-top: 120px;
+  margin-left: 130px;
+}
+
+.Services-list div {
+  background: #262626;
+  padding: 40px;
+  font-size: 13px;
+  font-weight: 300;
+  border-radius: 10px;
+  transition: background 0.5s, transform 0.5s;
+}
+
+.Services-list div i {
+  font-size: 50px;
+  margin-bottom: 30px;
+}
+
+.Services-list div h2 {
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.Services-list div a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 12px;
+  margin-top: 20px;
+  display: inline-block;
+}
+
+.Services-list div:hover {
+  background: #ff004f;
+  transform: translateY(-10px);
+
+}
+
+
+/*--------------------------------------------------------------------*/
+
+
+#tables {
+  margin-top: 70px; /* Added margin-top */
+  margin-bottom: 120px;
+  
+}
+
+
+
+table {
+  width: 80%;
+  border-collapse: collapse;
+  margin-left: 50px;
+}
+
+th, td {
+  border: 1px solid rgb(243, 239, 239);
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #365583;
+}
+
+
+
+/*------------------------------------------contact-------------------------------*/
+
+#Contact {
+  margin-top: 70px; /* Added margin-top */
+}
+
+.container {
+  display: flex; /* Added to align items */
+}
+
+.Contact-left {
+  flex-basis: 35%;
+}
+
+.Contact-right {
+  flex-basis: 60%;
+}
+
+.Contact-left p {
+  margin-top: 30px;
+}
+
+.Contact-left p i {
+  color: #ff004f;
+  margin-right: 15px;
+  font-size: 25px;
+}
+
+.btn.btn2 {
+  display: inline-block;
+  background: #ff004f;
+  padding: 14px 60px; /* Updated padding */
+  font-size: 18px;
+  margin-top: 20px;
+  cursor: pointer;
+  border: none; /* Added border */
+  border-radius: 6px; /* Added border-radius */
+  color: #fff; /* Added text color */
+}
+
+.Contact-right form {
+  width: 100%;
+}
+
+form input,
+form textarea {
+  width: calc(100% - 30px); /* Updated width */
+  border: 0;
+  outline: none;
+  background: #262626;
+  padding: 15px;
+  margin: 15px 0;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 6px;
+}
+
+footer {
+  width: 100%; /* Corrected 'weight' to 'width' */
+  text-align: center;
+  padding: 25px 0;
+  background: #262626;
+  font-weight: 300;
+  margin-top: 20px;
+}
+
+footer i {
+  font-size: 20px;
+  margin-top: 5px;
+  color: #007bff; 
+}
+
+footer p {
+  margin-bottom: 5px;
+  display: flex; /* Align items horizontally */
+  align-items: center; /* Center items vertically */
+  justify-content: center; /* Center items horizontally */
+}
+
+footer p i {
+  margin-right: 5px; /* Add spacing between icon and email */
+}
+
+
+
+
+
+
+
+
+
+
+
